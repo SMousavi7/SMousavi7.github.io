@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smousavi7.github.io/sitemap.xml

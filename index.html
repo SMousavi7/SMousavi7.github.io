@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>S. Sadra Mousavi — Computer Engineering</title>
+<meta name="description" content="S. Sadra Mousavi — computer engineering student at Shahid Beheshti University working on embedded systems, IoT, edge computing and hardware design. Projects, teaching and CV.">
+<meta name="author" content="S. Sadra Mousavi">
+<meta name="theme-color" content="#f6f5f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1013" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://smousavi7.github.io/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="S. Sadra Mousavi — Computer Engineering">
+<meta property="og:description" content="Embedded systems, IoT and hardware design. Computer engineering at Shahid Beheshti University, Tehran.">
+<meta property="og:url" content="https://smousavi7.github.io/">
+<meta property="og:image" content="https://smousavi7.github.io/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script>
+  // Set the theme before first paint so there is no flash of the wrong palette.
+  (function () {
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Seyed Sadra Mousavi",
+  "alternateName": "S. Sadra Mousavi",
+  "jobTitle": "Computer Engineering Student",
+  "email": "mailto:seyedsadramousavi77@gmail.com",
+  "url": "https://smousavi7.github.io/",
+  "address": { "@type": "PostalAddress", "addressLocality": "Tehran", "addressCountry": "IR" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Shahid Beheshti University" },
+    { "@type": "HighSchool", "name": "Allameh Helli (NODET) High School" }
+  ],
+  "knowsAbout": ["Embedded Systems", "Internet of Things", "Edge Computing", "Digital Twins", "Embedded AI", "Computer Networks", "Cybersecurity", "Verilog", "FPGA"],
+  "sameAs": [
+    "https://github.com/SMousavi7",
+    "https://www.linkedin.com/in/seyed-sadra-mousavi-2307a42a4/"
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="mark" href="#top" aria-label="S. Sadra Mousavi — home">
+      <span class="mark__chip" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/>
+          <path d="M9 5V2.5M15 5V2.5M9 21.5V19M15 21.5V19M5 9H2.5M5 15H2.5M21.5 9H19M21.5 15H19"/>
+        </svg>
+      </span>
+      <span class="mark__text">S. Sadra Mousavi</span>
+    </a>
+
+    <nav class="nav__links" id="menu" aria-label="Sections">
+      <a href="#focus">Focus</a>
+      <a href="#education">Education</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <!-- Both CV buttons take their href from assets/js/config.js — edit the
+           path there, not here. This href is the fallback used when
+           JavaScript is off, so keep the two in step. -->
+      <a class="btn btn--sm btn--solid nav__cv" data-cv href="assets/files/Sadra-Mousavi-CV.pdf" download>
+        <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg>
+        CV
+      </a>
+    </nav>
+
+    <div class="nav__tools">
+      <button class="iconbtn" id="theme" type="button" aria-label="Switch colour theme" title="Switch colour theme">
+        <svg class="i i--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="i i--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
+      </button>
+      <button class="iconbtn burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ───────────────────────── hero ───────────────────────── -->
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true">
+      <svg class="traces" viewBox="0 0 600 460" fill="none" preserveAspectRatio="xMidYMid meet">
+        <g stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 90h120l40-40h150"/>
+          <path d="M20 150h70l50 50h180l40 40h140"/>
+          <path class="flow" d="M0 250h150l60-60h200l50 50h140"/>
+          <path d="M60 400h180l60-60h120l40 40h140"/>
+          <path class="flow" d="M120 460V350l50-50h230l50 50v110"/>
+          <path d="M430 0v90l40 40v120"/>
+          <path d="M250 0v50"/>
+          <path d="M540 170h60"/>
+        </g>
+        <g fill="currentColor">
+          <circle cx="180" cy="50" r="3.5"/><circle cx="330" cy="50" r="3.5"/>
+          <circle cx="140" cy="200" r="3.5"/><circle cx="470" cy="250" r="3.5"/>
+          <circle cx="210" cy="190" r="3.5"/><circle cx="410" cy="190" r="3.5"/>
+          <circle cx="300" cy="340" r="3.5"/><circle cx="420" cy="380" r="3.5"/>
+        </g>
+        <g stroke="currentColor" stroke-width="1.25" fill="none">
+          <rect x="236" y="126" width="88" height="68" rx="4"/>
+          <rect x="256" y="146" width="48" height="28" rx="2"/>
+          <path d="M256 126v-10M280 126v-10M304 126v-10M256 194v10M280 194v10M304 194v10"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="wrap hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow reveal">B.Sc. Computer Engineering · Shahid Beheshti University</p>
+        <h1 class="hero__name reveal">
+          <span>S. Sadra</span>
+          <span class="hero__last">Mousavi</span>
+        </h1>
+        <p class="hero__lede reveal">
+          I build things that live where software meets silicon — <strong>embedded systems</strong>,
+          <strong>IoT</strong> and <strong>edge computing</strong>. My work runs from Verilog on FPGA
+          fabric and model-based real-time controllers up to on-device inference and the networks
+          that carry it.
+        </p>
+        <p class="hero__sub reveal">
+          Four semesters as a teaching assistant across advanced programming, operating systems and
+          computer architecture. Currently in Tehran, Iran.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a class="btn btn--solid" data-cv href="assets/files/Sadra-Mousavi-CV.pdf" download>
+            <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg>
+            Download CV
+          </a>
+          <a class="btn" href="https://github.com/SMousavi7" target="_blank" rel="noopener">
+            <svg class="i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            GitHub
+          </a>
+          <a class="btn" href="mailto:seyedsadramousavi77@gmail.com">
+            <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+
+      <!-- datasheet card -->
+      <aside class="sheet reveal" aria-label="Profile summary">
+        <div class="sheet__head">
+          <span class="dot" aria-hidden="true"></span>
+          <span>PROFILE.TXT</span>
+        </div>
+        <dl class="sheet__body">
+          <div><dt>Focus</dt><dd>Embedded · IoT · Edge</dd></div>
+          <div><dt>Institution</dt><dd>Shahid Beheshti Univ.</dd></div>
+          <div><dt>Enrolled</dt><dd>Sep 2022 — present</dd></div>
+          <div><dt>GPA</dt><dd>18.43 / 20</dd></div>
+          <div><dt>Location</dt><dd>Tehran, Iran</dd></div>
+          <div><dt>Languages</dt><dd>Persian · English</dd></div>
+        </dl>
+        <div class="sheet__foot">
+          <a href="https://github.com/SMousavi7" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/seyed-sadra-mousavi-2307a42a4/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:seyedsadramousavi77@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+          </a>
+        </div>
+      </aside>
+    </div>
+
+    <!-- stats strip -->
+    <div class="wrap">
+      <ul class="stats reveal">
+        <li><b>18.43<span>/20</span></b><span class="stats__k">Undergraduate GPA</span></li>
+        <li><b>71</b><span class="stats__k">National exam rank, regional quota</span></li>
+        <li><b>Top 10<span>%</span></b><span class="stats__k">Of the CE cohort, 2025</span></li>
+        <li><b>3</b><span class="stats__k">Courses assisted as TA</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── focus ───────────────────────── -->
+  <section class="sec" id="focus">
+    <div class="wrap">
+      <header class="sec__head reveal">
+        <span class="sec__num">01</span>
+        <h2>Research interests</h2>
+        <p class="sec__note">The problems I keep coming back to.</p>
+      </header>
+
+      <ul class="focus">
+        <li class="focus__item reveal">
+          <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+          <h3>Embedded systems</h3>
+          <p>Firmware, real-time control and model-based design on ARM Cortex-M, STM32 and ESP32.</p>
+        </li>
+        <li class="focus__item reveal">
+          <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h.01"/><path d="M8.5 16.4a5 5 0 0 1 7 0"/><path d="M5 12.9a10 10 0 0 1 14 0"/><path d="M2 8.8a15 15 0 0 1 20 0"/></svg>
+          <h3>Internet of Things</h3>
+          <p>Sensor networks, MQTT telemetry and dashboards that make a fleet of devices legible.</p>
+        </li>
+        <li class="focus__item reveal">
+          <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="8" rx="2"/><rect x="2" y="13" width="20" height="8" rx="2"/><path d="M6 7h.01M6 17h.01"/></svg>
+          <h3>Edge computing</h3>
+          <p>Pushing the decision to the device — latency, privacy and bandwidth budgets that hold.</p>
+        </li>
+        <li class="focus__item reveal">
+          <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M11 9h4a2 2 0 0 0 2-2V3"/><circle cx="9" cy="9" r="2"/><path d="M7 21v-4a2 2 0 0 1 2-2h4"/><circle cx="15" cy="15" r="2"/></svg>
+          <h3>Embedded AI</h3>
+          <p>Small models on small silicon: quantised inference where there is no cloud to call.</p>
+        </li>
+        <li class="focus__item reveal">
+          <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 7.5v6C3 18.5 12 21 12 21s9-2.5 9-7.5v-6Z" opacity=".5"/><path d="M12 3v18"/><path d="M3 7.5 12 12l9-4.5"/></svg>
+          <h3>Digital twins</h3>
+          <p>Simulating a plant well enough that the model, not the hardware, catches the bug first.</p>
+        </li>
+        <li class="focus__item reveal">
+          <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></svg>
+          <h3>Computer networks</h3>
+          <p>Protocol behaviour under load, and the gap between the RFC and the wire.</p>
+        </li>
+        <li class="focus__item reveal">
+          <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1Z"/><path d="m9.5 12 2 2 3.5-4"/></svg>
+          <h3>Cybersecurity</h3>
+          <p>Cryptographic primitives in hardware, key management, and building things that fail closed.</p>
+        </li>
+        <li class="focus__item focus__item--cta reveal">
+          <h3>Working on something in this space?</h3>
+          <p>I would like to hear about it.</p>
+          <a class="focus__link" href="#contact">
+            Get in touch
+            <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── education ───────────────────────── -->
+  <section class="sec sec--alt" id="education">
+    <div class="wrap">
+      <header class="sec__head reveal">
+        <span class="sec__num">02</span>
+        <h2>Education &amp; honors</h2>
+      </header>
+
+      <div class="cols">
+        <div class="col">
+          <ol class="tl">
+            <li class="tl__item reveal">
+              <span class="tl__when">Sep 2022 — present</span>
+              <h3>Shahid Beheshti University</h3>
+              <p class="tl__role">B.Sc. in Computer Engineering · Tehran, Iran</p>
+              <p>GPA 18.43 / 20.</p>
+            </li>
+            <li class="tl__item reveal">
+              <span class="tl__when">Sep 2019 — Aug 2022</span>
+              <h3>Allameh Helli “NODET” High School</h3>
+              <p class="tl__role">Diploma, Mathematics &amp; Physics · Tehran, Iran</p>
+              <p>GPA 19.43 / 20.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="col">
+          <ul class="awards">
+            <li class="award reveal">
+              <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-2.5L17 22l-1.5-8"/></svg>
+              <div>
+                <h3>Top 10% academic standing <span class="award__when">Sep 2025</span></h3>
+                <p>Ranked in the top decile of a computer engineering cohort of roughly 100 students.</p>
+              </div>
+            </li>
+            <li class="award reveal">
+              <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v5a8 8 0 0 1-16 0Z"/><path d="M4 6H2.5A2.5 2.5 0 0 0 5 9M20 6h1.5A2.5 2.5 0 0 1 19 9"/><path d="M12 17v4M8 21h8"/></svg>
+              <div>
+                <h3>National university entrance exam <span class="award__when">Sep 2022</span></h3>
+                <p>Rank <strong>71</strong> among more than 37,000 participants in the regional quota.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── teaching ───────────────────────── -->
+  <section class="sec" id="teaching">
+    <div class="wrap">
+      <header class="sec__head reveal">
+        <span class="sec__num">03</span>
+        <h2>Teaching &amp; service</h2>
+        <p class="sec__note">Four consecutive semesters in front of a classroom.</p>
+      </header>
+
+      <ol class="tl tl--wide">
+        <li class="tl__item reveal">
+          <span class="tl__when">Fall 2023 — Spring 2025</span>
+          <h3>Teaching Assistant — Advanced Programming</h3>
+          <p class="tl__role">Dr. Mojtaba Vahidi-Asl · Shahid Beheshti University</p>
+          <ul>
+            <li>Head of the workshop team, coordinating the assistants who ran workshop sessions.</li>
+            <li>Delivered programming workshops on advanced concepts to undergraduate students.</li>
+            <li>Planned instructional material across four consecutive semesters.</li>
+          </ul>
+        </li>
+        <li class="tl__item reveal">
+          <span class="tl__when">Fall 2024 — Spring 2025</span>
+          <h3>Teaching Assistant — Operating Systems Concepts</h3>
+          <p class="tl__role">Prof. Mohsen Ebrahimi Moghadam · Shahid Beheshti University</p>
+          <ul>
+            <li>Designed programming assignments and course projects on operating system concepts.</li>
+            <li>Presented course material and guided students through project implementation.</li>
+          </ul>
+        </li>
+        <li class="tl__item reveal">
+          <span class="tl__when">Fall 2024 — Spring 2025</span>
+          <h3>Teaching Assistant — Computer Architecture</h3>
+          <p class="tl__role">Dr. Dara Rahmati · Shahid Beheshti University</p>
+          <ul>
+            <li>Designed assignments and projects on processor architecture and low-level systems.</li>
+            <li>Supported students working through architecture and assembly-level concepts.</li>
+          </ul>
+        </li>
+        <li class="tl__item tl__item--muted reveal">
+          <span class="tl__when">Spring 2024 — Spring 2025</span>
+          <h3>Editorial team member — Faculty scientific magazine</h3>
+          <p class="tl__role">Supervised by Prof. Shams Aliee</p>
+          <ul>
+            <li>Reviewed, edited and prepared academic content for publication.</li>
+          </ul>
+        </li>
+        <li class="tl__item tl__item--muted reveal">
+          <span class="tl__when">Fall 2024 — Spring 2025</span>
+          <h3>Executive committee — University Conference on Artificial Intelligence</h3>
+          <p class="tl__role">Supervised by Dr. Salimi Badr</p>
+          <ul>
+            <li>Organisation, coordination and on-the-day execution of the conference.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── projects ───────────────────────── -->
+  <section class="sec sec--alt" id="projects">
+    <div class="wrap">
+      <header class="sec__head reveal">
+        <span class="sec__num">04</span>
+        <h2>Projects</h2>
+        <p class="sec__note">Selected work — all of it open on GitHub.</p>
+      </header>
+
+      <div class="filters reveal" role="group" aria-label="Filter projects by area">
+        <button type="button" class="chip is-on" data-filter="all">All</button>
+        <button type="button" class="chip" data-filter="hardware">Hardware &amp; FPGA</button>
+        <button type="button" class="chip" data-filter="embedded">Embedded &amp; IoT</button>
+        <button type="button" class="chip" data-filter="security">Security</button>
+        <button type="button" class="chip" data-filter="systems">Systems</button>
+        <button type="button" class="chip" data-filter="ai">AI</button>
+      </div>
+
+      <div class="grid" id="grid">
+
+        <article class="card card--wide reveal" data-cat="hardware ai">
+          <div class="card__top"><span class="card__tag">Hardware · FPGA</span></div>
+          <h3><a href="https://github.com/SMousavi7/fpga-digit-convolution" target="_blank" rel="noopener">FPGA digit convolution accelerator<span class="card__arrow" aria-hidden="true">↗</span></a></h3>
+          <p>A hardware convolution accelerator that detects the digits 8 and 9 in a 64×64 grayscale image, driven over AXI4-Lite from a Zynq PS and deployed to a remote FPGA board.</p>
+          <ul class="tags"><li>Verilog</li><li>AXI4-Lite</li><li>Zynq</li><li>RemoteFPGA</li></ul>
+        </article>
+
+        <article class="card card--wide reveal" data-cat="embedded ai">
+          <div class="card__top"><span class="card__tag">Embedded AI · IoT</span></div>
+          <h3><a href="https://github.com/SMousavi7/MPU6050-Edge-AI-Motion-Classification" target="_blank" rel="noopener">Edge-AI motion classification<span class="card__arrow" aria-hidden="true">↗</span></a></h3>
+          <p>An AIoT pipeline that classifies motion from simulated MPU6050 sensor data: inference runs at the edge through Edge Impulse WebAssembly, results travel over MQTT, and ThingsBoard handles live monitoring and alerts.</p>
+          <ul class="tags"><li>Edge Impulse</li><li>WebAssembly</li><li>MQTT</li><li>ThingsBoard</li></ul>
+        </article>
+
+        <article class="card reveal" data-cat="embedded">
+          <div class="card__top"><span class="card__tag">IoT</span></div>
+          <h3><a href="https://github.com/SMousavi7/smart-home-knx-thingsboard" target="_blank" rel="noopener">Smart home over KNX<span class="card__arrow" aria-hidden="true">↗</span></a></h3>
+          <p>A smart-home system joining KNX devices to ThingsBoard, with MCP and a locally hosted Ollama model giving it Persian natural-language control.</p>
+          <ul class="tags"><li>KNX</li><li>ThingsBoard</li><li>MCP</li><li>Ollama</li><li>TypeScript</li></ul>
+        </article>
+
+        <article class="card reveal" data-cat="embedded">
+          <div class="card__top"><span class="card__tag">Real-time · Model-based</span></div>
+          <h3><a href="https://github.com/SMousavi7/Embedded-Real-Time-Systems-Course-Project" target="_blank" rel="noopener">Real-time heating controller<span class="card__arrow" aria-hidden="true">↗</span></a></h3>
+          <p>A multi-room heating controller modelled end-to-end under the V-model: thermostat logic, a safety checker and room thermal dynamics in Simulink and Stateflow, validated with Simulink Test and Embedded Coder.</p>
+          <ul class="tags"><li>MATLAB</li><li>Simulink</li><li>Stateflow</li><li>C</li></ul>
+        </article>
+
+        <article class="card reveal" data-cat="hardware security">
+          <div class="card__top"><span class="card__tag">Crypto hardware</span></div>
+          <h3><a href="https://github.com/SMousavi7/triple-des-hardware-architectures" target="_blank" rel="noopener">Triple DES, three architectures<span class="card__arrow" aria-hidden="true">↗</span></a></h3>
+          <p>Two-key 3DES in Verilog, built three ways — single-cycle, multi-cycle and pipelined — with ECB, CBC and OFB modes, so the area/throughput trade-off is measurable rather than argued.</p>
+          <ul class="tags"><li>Verilog</li><li>3DES</li><li>Pipelining</li></ul>
+        </article>
+
+        <article class="card reveal" data-cat="hardware security">
+          <div class="card__top"><span class="card__tag">Crypto hardware</span></div>
+          <h3><a href="https://github.com/SMousavi7/verilog-montgomery-modular-exponentiation" target="_blank" rel="noopener">Montgomery modular exponentiation<span class="card__arrow" aria-hidden="true">↗</span></a></h3>
+          <p>Modular exponentiation in hardware, assembled from Montgomery multiplication, Karatsuba multiplication, non-restoring division and the extended Euclidean algorithm.</p>
+          <ul class="tags"><li>Verilog</li><li>Montgomery</li><li>Karatsuba</li></ul>
+        </article>
+
+        <article class="card reveal" data-cat="hardware security">
+          <div class="card__top"><span class="card__tag">Crypto hardware</span></div>
+          <h3><a href="https://github.com/SMousavi7/tea-encryption-remote-fpga" target="_blank" rel="noopener">TEA on a remote FPGA<span class="card__arrow" aria-hidden="true">↗</span></a></h3>
+          <p>The Tiny Encryption Algorithm implemented on remote Mitra Z10/Z20 boards, wired to the processing system through AXI4-Lite and built with Vivado and the Xilinx SDK.</p>
+          <ul class="tags"><li>Verilog</li><li>Zynq</li><li>Vivado</li><li>AXI4-Lite</li></ul>
+        </article>
+
+        <article class="card reveal" data-cat="hardware">
+          <div class="card__top"><span class="card__tag">Processor design</span></div>
+          <h3><a href="https://github.com/SMousavi7/MIPS-pipeline" target="_blank" rel="noopener">Pipelined MIPS processor<span class="card__arrow" aria-hidden="true">↗</span></a></h3>
+          <p>A MIPS processor in Verilog, down to the ALU and memory subsystem — the whole datapath rather than a block diagram of one.</p>
+          <ul class="tags"><li>Verilog</li><li>MIPS</li><li>Datapath</li></ul>
+        </article>
+
+        <article class="card reveal" data-cat="systems">
+          <div class="card__top"><span class="card__tag">Operating systems</span></div>
+          <h3><a href="https://github.com/SMousavi7/Operating-Systems-Course-Project" target="_blank" rel="noopener">Operating system simulator<span class="card__arrow" aria-hidden="true">↗</span></a></h3>
+          <p>An educational OS simulation with a CPU, MMU, threads and a file layer, used to study page-replacement, virtual memory, synchronisation and scheduling under measurable fault behaviour.</p>
+          <ul class="tags"><li>Python</li><li>Virtual memory</li><li>Scheduling</li></ul>
+        </article>
+
+        <article class="card reveal" data-cat="security">
+          <div class="card__top"><span class="card__tag">Applied cryptography</span></div>
+          <h3><a href="https://github.com/SMousavi7/CryptographyProject" target="_blank" rel="noopener">Secure client–server system<span class="card__arrow" aria-hidden="true">↗</span></a></h3>
+          <p>A two-phase cryptography project: symmetric encryption, RSA and DSA, a small PKI with certificate management, and a client–server channel built on top of it.</p>
+          <ul class="tags"><li>Python</li><li>RSA</li><li>DSA</li><li>PKI</li></ul>
+        </article>
+
+        <article class="card reveal" data-cat="ai">
+          <div class="card__top"><span class="card__tag">Game AI</span></div>
+          <h3><a href="https://github.com/SMousavi7/Hand-of-the-King-ai-agent" target="_blank" rel="noopener">Hand of the King agent<span class="card__arrow" aria-hidden="true">↗</span></a></h3>
+          <p>A minimax agent whose heuristic weights were tuned by a genetic algorithm. Third place in the course AI competition.</p>
+          <ul class="tags"><li>Python</li><li>Minimax</li><li>Genetic algorithm</li></ul>
+        </article>
+
+        <article class="card reveal" data-cat="hardware">
+          <div class="card__top"><span class="card__tag">Digital design</span></div>
+          <h3><a href="https://github.com/SMousavi7/implementation-of-a-function-using-transistor-level-verilog" target="_blank" rel="noopener">Transistor-level logic in Verilog<span class="card__arrow" aria-hidden="true">↗</span></a></h3>
+          <p>A logic function built from transistor primitives rather than gates — the level where the abstraction stops being free.</p>
+          <ul class="tags"><li>Verilog</li><li>CMOS</li><li>Logic design</li></ul>
+        </article>
+
+      </div>
+
+      <p class="grid__empty" id="empty" hidden>Nothing in this category yet.</p>
+
+      <p class="more reveal">
+        <a class="btn" href="https://github.com/SMousavi7?tab=repositories" target="_blank" rel="noopener">
+          <svg class="i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          All repositories
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── skills ───────────────────────── -->
+  <section class="sec" id="skills">
+    <div class="wrap">
+      <header class="sec__head reveal">
+        <span class="sec__num">05</span>
+        <h2>Skills</h2>
+      </header>
+
+      <dl class="specs">
+        <div class="spec reveal"><dt>Programming</dt><dd><span>C</span><span>C++</span><span>Python</span><span>Java</span><span>C#</span></dd></div>
+        <div class="spec reveal"><dt>Low level</dt><dd><span>x86 Assembly</span><span>ARM Assembly</span></dd></div>
+        <div class="spec reveal"><dt>Hardware</dt><dd><span>Verilog</span><span>STM32</span><span>ESP32</span><span>ARM Cortex-M</span><span>Arduino</span></dd></div>
+        <div class="spec reveal"><dt>Modelling</dt><dd><span>MATLAB</span><span>Simulink</span><span>Stateflow</span><span>Embedded Coder</span></dd></div>
+        <div class="spec reveal"><dt>Data &amp; ML</dt><dd><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span></dd></div>
+        <div class="spec reveal"><dt>Databases</dt><dd><span>PostgreSQL</span><span>MySQL</span></dd></div>
+        <div class="spec reveal"><dt>Tooling</dt><dd><span>Git</span><span>Docker</span><span>Linux</span><span>Vivado</span></dd></div>
+        <div class="spec reveal"><dt>Soft skills</dt><dd><span>Leadership</span><span>Teamwork</span><span>Communication</span><span>Time management</span><span>Presentation</span></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── contact ───────────────────────── -->
+  <section class="sec sec--contact" id="contact">
+    <div class="wrap">
+      <header class="sec__head reveal">
+        <span class="sec__num">06</span>
+        <h2>Get in touch</h2>
+        <p class="sec__note">Open to research collaboration, graduate opportunities and interesting hardware.</p>
+      </header>
+
+      <div class="contact reveal">
+        <a class="contact__mail" href="mailto:seyedsadramousavi77@gmail.com">
+          seyedsadramousavi77@gmail.com
+          <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+        </a>
+
+        <ul class="contact__list">
+          <li>
+            <svg class="i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            <a href="https://github.com/SMousavi7" target="_blank" rel="noopener">github.com/SMousavi7</a>
+          </li>
+          <li>
+            <svg class="i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <a href="https://www.linkedin.com/in/seyed-sadra-mousavi-2307a42a4/" target="_blank" rel="noopener">S. Sadra Mousavi</a>
+          </li>
+          <li>
+            <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3h-3A1.5 1.5 0 0 0 2 4.6c.3 8.3 7.1 15.1 15.4 15.4A1.5 1.5 0 0 0 19 18.5v-3a1.5 1.5 0 0 0-1.2-1.5l-2.5-.5a1.5 1.5 0 0 0-1.5.6l-.8 1a12 12 0 0 1-5.1-5.1l1-.8a1.5 1.5 0 0 0 .6-1.5l-.5-2.5A1.5 1.5 0 0 0 6.5 3Z"/></svg>
+            <a href="tel:+989392278713">+98 939 227 8713</a>
+          </li>
+          <li>
+            <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Tehran, Iran</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p>© <span id="year">2026</span> S. Sadra Mousavi</p>
+    <p class="foot__meta">Built by hand — no framework, no tracking.</p>
+    <a class="foot__top" href="#top">
+      Back to top
+      <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
